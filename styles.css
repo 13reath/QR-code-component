@@ -5,7 +5,7 @@
   --slate-300: hsl(212, 45%, 89%);
   --slate-500: hsl(216, 15%, 48%);
   --slate-900: hsl(218, 44%, 22%);
-  --font-size-paragraph: 16px;
+  --font-size-paragraph: 1rem;
   --font-family: "Outfit", sans-serif;
 }
 
@@ -23,39 +23,35 @@ html {
 p {
   font-size: var(--font-size-paragraph);
   font-weight: 400;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 24px;
-  text-align: center;
-}
-
-.container {
-  width: 300px; /* Ширина div */
-  overflow: hidden; /* Скрывает части изображения, выходящие за пределы div */
-  position: relative;
-  padding: 16px;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Распределяет пространство */
-  border-radius: 20px;
-}
-
-.container img {
-  width: 100%;
-  height: auto; /* Сохраняет пропорции изображения */
-  object-fit: contain; /* Изображение будет умещаться в контейнере */
-  border-radius: 10px;
-}
-
-p {
-  font-size: var(--font-size-paragraph);
-  font-weight: 400;
   text-align: center;
   color: var(--slate-500);
   line-height: 1.5;
   margin: 0;
   padding: 0 10px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 350px;
+  overflow: hidden;
+  position: relative;
+  padding: 16px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 20px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
 }
